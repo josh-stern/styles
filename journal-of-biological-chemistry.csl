@@ -30,7 +30,7 @@
     Thomsen, W. (Lord Kelvin) (1871) On the origin of life. Presidential Address to the British Association for the Advancement of Science, Edinburgh, August 1871; reprinted in Kelvin’s Popular Lectures and Addresses (2010), pp. 132&#8211;205, Nabu Press, Charleston, SC
   -->
   <macro name="editor">
-    <names variable="editor" prefix="(" suffix=")">
+    <names variable="editor" prefix=" (" suffix=")">
       <name name-as-sort-order="all" and="text" sort-separator=", " initialize-with=". " delimiter=", " delimiter-precedes-last="always"/>
       <label form="short" prefix=" " strip-periods="true"/>
     </names>
@@ -51,7 +51,7 @@
         <group delimiter=" ">
           <text term="online" prefix="[" suffix="]"/>
           <text variable="URL"/>
-          <group prefix="(" suffix=")" delimiter=" ">
+          <group prefix=" (" suffix=")" delimiter=" ">
             <text term="accessed" text-case="capitalize-first"/>
             <date variable="accessed" form="text"/>
           </group>
@@ -108,7 +108,7 @@
     <sort>
       <key variable="citation-number"/>
     </sort>
-    <layout prefix="(" suffix=")" delimiter=", ">
+    <layout prefix=" (" suffix=")" delimiter=", ">
       <text variable="citation-number"/>
     </layout>
   </citation>
@@ -117,7 +117,7 @@
       <text variable="citation-number" suffix=". "/>
       <group delimiter=" " suffix=" ">
         <text macro="author"/>
-        <date variable="issued" prefix="(" suffix=")">
+        <date variable="issued" prefix=" (" suffix=")">
           <date-part name="year"/>
         </date>
       </group>
